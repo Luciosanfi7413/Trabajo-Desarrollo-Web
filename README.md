@@ -139,21 +139,42 @@ Durante la fase de observación en el campo de trabajo, se identificaron de form
 ---
 
 ## 4.0 Identificación de stakeholders
-A continuación se identifican las partes interesadas relevantes para el Sistema de Gestión de Solicitudes y Mesa de Ayuda Operativa adaptado al sector logístico. Para cada una se describe su rol y se justifica por qué resulta clave para el proyecto.
-Choferes y Operarios de Depósito (Solicitantes).
-Son el personal operativo de primera línea que utiliza activamente los recursos físicos de la empresa. Su rol consiste en reportar incidentes técnicos de hardware o software (computadoras de abordo, escáneres portátiles PDA, terminales de stock o impresoras térmicas de etiquetas) que impidan el normal desarrollo de sus tareas de picking, despacho o distribución.
-Por qué es clave: Son los usuarios finales principales y los generadores de la carga de trabajo del sistema. Al depender de la rapidez de sus tareas (tiempos de carga y descarga de camiones), sus necesidades determinan los requisitos de usabilidad más críticos: el formulario de tickets debe ser ultra rápido, mobile-friendly y contar con autocompletado de perfil y adjunto ágil de evidencias fotográficas para no retrasar la cadena de suministro.
-Técnico de Soporte IT Interno
-Es el agente informático propio de la organización encargado de la recepción, diagnóstico, comentarios de seguimiento y resolución de los incidentes reportados por el personal. Documenta los tiempos exactos trabajados y decide cuándo un problema supera su capacidad y debe escalarse.
-Por qué es clave: Representa el núcleo operativo de la mesa de ayuda. El sistema debe adaptarse perfectamente a su flujo de trabajo, proveyendo un tablero gráfico en tiempo real y alertas de vencimiento. Si la interfaz para documentar tareas o comunicarse con el empleado no es eficiente, los tiempos de resolución se extienden, afectando directamente la productividad general de la empresa.
-Jefe de Logística y Operaciones.
-Es el directivo responsable de garantizar que los camiones salgan a tiempo y que los centros de distribución puedan operar sin cuellos de botella. Monitorea los indicadores de rendimiento (SLA) del equipo de sistemas y evalúa el impacto de los incidentes.
-Por qué es clave: Es el comitente principal que define las reglas de negocio, los tiempos máximos permitidos para resolver fallas (SLA) y las prioridades de atención. Su rol es crítico porque utiliza el software para la toma de decisiones estratégicas, basándose en las estadísticas de rendimiento exportables y en la matriz de priorización automática para que el negocio no se detenga por fallas técnicas.
-Proveedor Externo de Hardware y Redes Logísticas (Especialista Externo)
-Es el servicio técnico tercerizado contratado por la empresa para dar soporte a infraestructura crítica, como el mantenimiento de los servidores de stock (WMS/ERP), la red Wi-Fi industrial del depósito o las garantías de las colectoras de datos.
-Por qué es clave: Su intervención es fundamental en incidentes complejos de infraestructura. Al ser un actor externo, sus demoras no deben penalizar al equipo interno; por lo tanto, su asignación activa el requerimiento de pausa automática de SLA . El sistema debe controlar estrictamente sus accesos y obligar a que sus soluciones sean validadas antes del cierre.
 
+---
 
+A continuación, se identifican las partes interesadas relevantes para el **Sistema de Gestión de Solicitudes y Mesa de Ayuda Operativa** adaptado al sector logístico. Para cada una se describe su rol y se justifica su importancia crítica dentro del proyecto:
+
+---
+
+### 🚚 1. Choferes y Operarios de Depósito (Solicitantes)
+
+* **Rol en el sistema:** Son el personal operativo de primera línea que utiliza activamente los recursos físicos de la empresa. Su rol consiste en reportar incidentes técnicos de hardware o software (computadoras de abordo, escáneres portátiles PDA, terminales de stock o impresoras térmicas de etiquetas) que impidan el normal desarrollo de sus tareas de picking, despacho o distribución.
+
+> 🔑 **Por qué es clave:** Son los usuarios finales principales y los generadores de la carga de trabajo del sistema. Al depender de la rapidez de sus tareas (tiempos de carga y descarga de camiones), sus necesidades determinan los requisitos de usabilidad más críticos: el formulario de tickets debe ser ultra rápido, *mobile-friendly* y contar con autocompletado de perfil y adjunto ágil de evidencias fotográficas para no retrasar la cadena de suministro.
+
+---
+
+### 💻 2. Técnico de Soporte IT Interno
+
+* **Rol en el sistema:** Es el agente informático propio de la organización encargado de la recepción, diagnóstico, comentarios de seguimiento y resolución de los incidentes reportados por el personal. Documenta los tiempos exactos trabajados y decide cuándo un problema supera su capacidad y debe escalarse.
+
+> 🔑 **Por qué es clave:** Representa el núcleo operativo de la mesa de ayuda. El sistema debe adaptarse perfectamente a su flujo de trabajo, proveyendo un tablero gráfico en tiempo real y alertas de vencimiento. Si la interfaz para documentar tareas o comunicarse con el empleado no es eficiente, los tiempos de resolución se extienden, afectando directamente la productividad general de la empresa.
+
+---
+
+### 📊 3. Jefe de Logística y Operaciones
+
+* **Rol en el sistema:** Es el directivo responsable de garantizar que los camiones salgan a tiempo y que los centros de distribución puedan operar sin cuellos de botella. Monitorea los indicadores de rendimiento (SLA) del equipo de sistemas y evalúa el impacto de los incidentes.
+
+> 🔑 **Por qué es clave:** Es el comitente principal que define las reglas de negocio, los tiempos máximos permitidos para resolver fallas (SLA) y las prioridades de atención. Su rol es crítico porque utiliza el software para la toma de decisiones estratégicas, basándose en las estadísticas de rendimiento exportables y en la matriz de priorización automática para que el negocio no se detenga por fallas técnicas.
+
+---
+
+### 🔧 4. Proveedor Externo de Hardware y Redes Logísticas (Especialista Externo)
+
+* **Rol en el sistema:** Es el servicio técnico tercerizado contratado por la empresa para dar soporte a infraestructura crítica, como el mantenimiento de los servidores de stock (WMS/ERP), la red Wi-Fi industrial del depósito o las garantías de las colectoras de datos.
+
+> 🔑 **Por qué es clave:** Su intervención es fundamental en incidentes complejos de infraestructura. Al ser un actor externo, sus demoras no deben penalizar al equipo interno; por lo tanto, su asignación activa el requerimiento de pausa automática de SLA. El sistema debe controlar estrictamente sus accesos y obligar a que sus soluciones sean validadas antes del cierre definitivo del caso.
 
 ---
 
