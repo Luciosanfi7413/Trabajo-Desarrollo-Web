@@ -283,3 +283,23 @@
 | **Importancia** | Importante. |
 | **Urgencia** | Vital. |
 | **Comentarios** | No aplica. |
+## 8.0 Modelo de Datos (DER)
+
+---
+
+![Diagrama Entidad Relación](./TP%20DESARROLLO%20DIAGRAMA.png)
+
+> 💡 **Nota de renderizado:** Para visualizar de forma interactiva el diagrama de arriba, podés importar el archivo correspondiente directamente en [Draw.io](https://app.diagrams.net/).
+
+### 📝 Descripción Técnica del Modelo Entidad-Relación
+
+Para garantizar la integridad de los datos y cumplir estrictamente con las reglas de negocio de la mesa de ayuda, el diagrama implementa las siguientes relaciones y cardinalidades:
+
+| Entidad Origen | Relación (Rombo) | Entidad Destino | Cardinalidad | Explicación Técnica |
+| :--- | :---: | :--- | :---: | :--- |
+| **USUARIO** | Genera | **TICKET** | `1 : N` | Un usuario (Solicitante) puede reportar muchos tickets, pero cada ticket individual pertenece a un único usuario emisor. |
+| **USUARIO** | Asigna | **TICKET** | `1 : N` | Un usuario (Técnico) puede tener asignados muchos tickets para resolver, pero un ticket en curso se delega a un solo técnico responsable. |
+| **TICKET** | Pertenece | **CATEGORIA** | `N : 1` | Muchos tickets pueden clasificarse bajo la misma tipología, pero un ticket individual pertenece estrictamente a una única categoría técnica. |
+| **TICKET** | Se asocia | **ACTIVO DE INVENTARIO** | `N : 1` | Muchos tickets de soporte pueden estar asociados a un mismo hardware o software defectuoso, pero cada ticket vincula un único activo por vez. |
+| **TICKET** | Contiene | **ADJUNTO** | `1 : N` | Un ticket puede contener múltiples archivos de evidencia (capturas, imágenes, PDFs), pero cada archivo pertenece de forma exclusiva a un único ticket. |
+| **TICKET** | Se deriva | **PROVEEDOR EXTERNO** | `N : 1` | Muchos tickets que excedan las capacidades internas pueden derivarse al mismo soporte tercerizado, pero un ticket específico solo se desvía a un único proveedor. |
