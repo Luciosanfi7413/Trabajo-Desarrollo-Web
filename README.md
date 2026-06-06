@@ -27,22 +27,95 @@
 ---
 
 ## 1.0 Introducción y Objetivos
-*[Copiar y pegar acá el texto de introducción que tenés en tu documento original]*
+Introducción.
+Somos una empresa que ofrece la implementación de GLPI, enfocada en clientes que todavía no utilizan herramientas formales de gestión de tickets, inventario ni soporte técnico. Para este trabajo se tomó como caso de estudio a Logística y Minería S.A., una empresa de transporte de carga con más de 20 años de experiencia, que actualmente enfrenta problemas de comunicación interna y de gestión de incidencias.
+El presente proyecto busca analizar el proceso actual de soporte técnico de la empresa y proponer la implementación de GLPI como solución tecnológica. A lo largo del documento se realizará un relevamiento, un análisis de los procesos actuales y una propuesta de mejora, con su respectivo estudio de factibilidad.
+Objetivo.
+El objetivo principal de este proyecto es evaluar la viabilidad de implementar GLPI en Logística y Minería S.A. con el fin de mejorar la trazabilidad de incidencias, optimizar la comunicación entre áreas y aumentar la eficiencia en la resolución de problemas técnicos. Además, se busca estandarizar procesos actualmente dispersos y manuales, logrando un mayor control de los recursos informáticos de la empresa.
+
 
 ---
 
 ## 2.0 Alcance del Sistema
-*[Copiar y pegar acá el alcance (dentro y fuera de alcance) de tu documento original]*
+Historia y contexto.
+Logística y Minería S.A. es una empresa de transporte de carga con más de 20 años de trayectoria. Comenzó como un emprendimiento familiar y, con el paso del tiempo, fue incorporando personal externo a medida que crecía. Hoy se compone de distintas áreas: sistemas, compras, mantenimiento, administración, ventas y logística.
+La expansión de la empresa trajo aparejados problemas de comunicación interna y dificultades en la gestión de incidencias técnicas, lo que motivó la búsqueda de soluciones tecnológicas más formales.
+Historia de la empresa.
+Desde sus orígenes, la empresa se dedicó al transporte de carga para el sector minero e industrial. Con el crecimiento de la demanda, amplió su estructura organizativa y diversificar los servicios ofrecidos. La experiencia adquirida en dos décadas la posicionó como un actor confiable dentro del rubro.
+Misión
+Logística y Minería S.A. Tiene como misión ofrecer soluciones integrales y confiables de transporte de carga para el sector minero e industrial, asegurando eficiencia, seguridad y calidad en cada servicio. La empresa busca optimizar sus procesos internos mediante la innovación tecnológica, la estandarización de procedimientos y una comunicación efectiva entre áreas. A través de la mejora continua y la incorporación de herramientas que fortalezcan la gestión operativa, Logística y Minería S.A. trabaja para consolidarse como un referente del sector, promoviendo un crecimiento sostenible y una atención ágil y transparente hacia sus clientes.
+
+
+Visión.
+Logística y Minería S.A. aspira a consolidarse como la empresa líder en transporte de carga para el sector minero e industrial, destacándose por la confiabilidad de sus servicios, la innovación en la gestión tecnológica y la eficiencia en la comunicación interna, impulsando un crecimiento sostenible y aportando mayor valor a sus clientes.
+Objetivos.
+●	Optimizar la gestión de incidencias técnicas mediante la implementación de un sistema centralizado que garantice trazabilidad y eficiencia.
+●	Mejorar la comunicación entre las diferentes áreas, evitando demoras y desorden en los procesos.
+●	Estandarizar los procedimientos de soporte técnico, reemplazando prácticas informales por métodos formales y documentados.
+●	Incrementar la eficiencia operativa a través de un control más preciso de los recursos tecnológicos e inventario.
+●	Impulsar la innovación tecnológica como motor de crecimiento y competitividad en el sector.
+
+
+Actualmente la empresa cuenta con las siguientes áreas:
+●	Área de sistemas 
+●	Área de compras
+●	Área de mantenimiento
+●	Área de administración
+●	Área de ventas
+●	Área de logística
+
 
 ---
 
 ## 3.0 Roles y Perfiles de Usuario
-*[Copiar y pegar acá la descripción de roles que armaron para el trabajo]*
+Planeamiento del relevamiento.
+Para obtener información precisa sobre la situación actual, se planificó un relevamiento que incluyó entrevistas a distintos niveles de la organización (mandos altos, medios y operativos) y observación directa de los procesos cotidianos en el área de sistemas. El objetivo fue identificar falencias, comprender los canales de comunicación y recolectar datos para el modelado de procesos y la propuesta de mejora.
+Entrevistas.
+Se entrevistó a representantes de mandos altos, medios y operativos, con el fin de obtener una visión completa de la problemática.
+Para comprender a fondo el proceso actual de gestión de incidencias que utiliza la empresa realizamos el siguiente cuestionario:
+Mandos altos.
+¿Cómo gestionan actualmente los problemas técnicos que surgen en la empresa?
+¿Cuál consideran que es la principal dificultad de este método?
+¿Qué impacto creen que tiene esta situación en la empresa?
+Respuestas.
+Hoy en día no tenemos un sistema formal. Cada sector se comunica con el área de sistemas como puede: a veces por teléfono, otras por WhatsApp, incluso personalmente. Luego, el área de sistemas lleva un registro en una planilla.
+Que no tenemos trazabilidad. Muchas veces no sabemos cuánto tarda en resolverse un problema ni en qué etapa está. Además, cada empleado usa un canal distinto y eso genera desorden.
+Perdemos tiempo y eficiencia. Además, cuando dependemos de un especialista externo, la comunicación se vuelve aún más lenta porque pasa por correos y no queda bien documentada.
+Mandos medios(Jefe de sistemas).
+¿Cómo reciben actualmente los pedidos de soporte técnico?
+¿Qué hacen ustedes cuando reciben un pedido?
+Respuestas.
+Los pedidos llegan por múltiples canales: algunos empleados nos escriben por WhatsApp, otros mandan un correo, a veces vienen directamente a la oficina a comentarlo, e incluso en ocasiones dejan una nota. No hay un único canal, lo cual nos obliga a estar atentos a diferentes medios al mismo tiempo.
+Lo primero que hacemos es registrar el incidente en una planilla manual que tenemos en el área. Después evaluamos la prioridad del problema: si es algo que podemos resolver internamente, lo atendemos lo antes posible. Si no contamos con los conocimientos o herramientas necesarias, lo derivamos a un especialista externo. Una vez que está resuelto, volvemos a registrar en la planilla cómo se solucionó y avisamos al área que lo reportó, generalmente por el mismo canal en el que nos contactaron.
+Mandos Operativos (ej: Empleados que usan la PC y el software a diario)
+Cuando tenés un problema con tu computadora o con el software, ¿qué hacés?
+¿Te queda algún comprobante o registro de que reportaste el problema?
+Si el problema se deriva a un especialista externo, ¿cómo te enteras?
+Respuestas.
+Generalmente le mandó un mensaje por WhatsApp al de sistemas, o si lo cruzo en la oficina se lo digo directamente. Si estoy apurado porque necesito seguir trabajando, trato de que la comunicación sea lo más rápida posible.
+No, salvo el chat en el celular o el correo si lo mandé por ahí. Pero después no tengo forma de ver en qué estado está, ni cuándo lo van a resolver.
+Me avisan después de que ya se resolvió, pero no sé bien qué hicieron ni cómo lo arreglaron.
+Observaciones directas.
+Durante la observación de los procesos se identificó que los reclamos se realizan a través de múltiples canales informales como WhatsApp, correo electrónico, notas escritas o comunicación verbal. El área de sistemas utiliza una planilla manual para registrar los casos, sin un procedimiento estandarizado. Esto genera falta de trazabilidad, dificultad para hacer seguimiento y ausencia de estadísticas que permitan medir tiempos de resolución o frecuencia de incidencias.
+
 
 ---
 
 ## 4.0 Ciclo de Vida del Ticket
-*[Copiar y pegar acá el texto o los pasos del ciclo de vida que definieron]*
+A continuación se identifican las partes interesadas relevantes para el Sistema de Gestión de Solicitudes y Mesa de Ayuda Operativa adaptado al sector logístico. Para cada una se describe su rol y se justifica por qué resulta clave para el proyecto.
+Choferes y Operarios de Depósito (Solicitantes).
+Son el personal operativo de primera línea que utiliza activamente los recursos físicos de la empresa. Su rol consiste en reportar incidentes técnicos de hardware o software (computadoras de abordo, escáneres portátiles PDA, terminales de stock o impresoras térmicas de etiquetas) que impidan el normal desarrollo de sus tareas de picking, despacho o distribución.
+Por qué es clave: Son los usuarios finales principales y los generadores de la carga de trabajo del sistema. Al depender de la rapidez de sus tareas (tiempos de carga y descarga de camiones), sus necesidades determinan los requisitos de usabilidad más críticos: el formulario de tickets debe ser ultra rápido, mobile-friendly y contar con autocompletado de perfil y adjunto ágil de evidencias fotográficas para no retrasar la cadena de suministro.
+Técnico de Soporte IT Interno
+Es el agente informático propio de la organización encargado de la recepción, diagnóstico, comentarios de seguimiento y resolución de los incidentes reportados por el personal. Documenta los tiempos exactos trabajados y decide cuándo un problema supera su capacidad y debe escalarse.
+Por qué es clave: Representa el núcleo operativo de la mesa de ayuda. El sistema debe adaptarse perfectamente a su flujo de trabajo, proveyendo un tablero gráfico en tiempo real y alertas de vencimiento. Si la interfaz para documentar tareas o comunicarse con el empleado no es eficiente, los tiempos de resolución se extienden, afectando directamente la productividad general de la empresa.
+Jefe de Logística y Operaciones.
+Es el directivo responsable de garantizar que los camiones salgan a tiempo y que los centros de distribución puedan operar sin cuellos de botella. Monitorea los indicadores de rendimiento (SLA) del equipo de sistemas y evalúa el impacto de los incidentes.
+Por qué es clave: Es el comitente principal que define las reglas de negocio, los tiempos máximos permitidos para resolver fallas (SLA) y las prioridades de atención. Su rol es crítico porque utiliza el software para la toma de decisiones estratégicas, basándose en las estadísticas de rendimiento exportables y en la matriz de priorización automática para que el negocio no se detenga por fallas técnicas.
+Proveedor Externo de Hardware y Redes Logísticas (Especialista Externo)
+Es el servicio técnico tercerizado contratado por la empresa para dar soporte a infraestructura crítica, como el mantenimiento de los servidores de stock (WMS/ERP), la red Wi-Fi industrial del depósito o las garantías de las colectoras de datos.
+Por qué es clave: Su intervención es fundamental en incidentes complejos de infraestructura. Al ser un actor externo, sus demoras no deben penalizar al equipo interno; por lo tanto, su asignación activa el requerimiento de pausa automática de SLA . El sistema debe controlar estrictamente sus accesos y obligar a que sus soluciones sean validadas antes del cierre.
+
 
 ---
 
