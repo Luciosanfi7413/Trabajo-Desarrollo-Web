@@ -166,47 +166,120 @@
 
 ## 7.0 Casos de Uso
 
-```text
-================================================================================
-CU001: Registro de Incidente
-================================================================================
-Descripción:       Permite a cualquier empleado de la organización reportar una 
-                   falla o solicitud técnica mediante un formulario web 
-                   estandarizado que asocia automáticamente su identidad al caso.
-Actores:           Solicitante (Empleado).
-Precondiciones:    El usuario debe estar autenticado en el sistema (RF01) a 
-                   través de un navegador compatible (RNF04) bajo HTTPS (RNF01).
-Postcondiciones:   El ticket queda registrado con estado "Nuevo" dentro del 
-                   flujo definido y visible en la bandeja técnica (RF06).
---------------------------------------------------------------------------------
-Secuencia Normal:
-  1. El Solicitante ingresa a la opción "Nuevo Ticket".
-     -> El sistema visualiza el formulario web estandarizado en idioma español 
-        y asocia automáticamente el caso al nombre del usuario logueado 
-        (RF03, RF04, RNF03).
-  2. El Solicitante selecciona la Categoría del incidente, ingresa la 
-     Descripción y selecciona el nivel de Urgencia (RF03).
-     -> No aplica.
-  3. El Solicitante opcionalmente adjunta archivos de evidencia como capturas 
-     de pantalla, imágenes o PDF (RF08).
-     -> No aplica.
-  4. El Solicitante opcionalmente enlaza un activo informático específico 
-     (hardware o software) de la lista de su área (RF09).
-     -> No aplica.
-  5. El Solicitante hace clic en el botón "Añadir".
-     -> El sistema genera un número de ticket único y correlativo de forma 
-        automática al momento de confirmar el registro (RF05).
-  6. No aplica.
-     -> El sistema cambia y muestra el estado del ticket a "Nuevo" dentro 
-        del flujo definido (RF06).
-  7. No aplica.
-     -> El sistema envía un correo automático al empleado y al área de sistemas 
-        confirmando la creación del ticket con su número único (RF07).
+---
 
-Excepciones:
-  q. El usuario intenta adjuntar archivos que superan el tamaño máximo.
-     -> El sistema rechaza la carga por exceder el límite configurable (RF08) 
-        y lanza un mensaje informativo en español (RNF03).
---------------------------------------------------------------------------------
-Importancia: Vital | Urgencia: Inmediatamente | Comentarios: No aplica
-================================================================================
+### 📄 CU001: Registro de Incidencia
+
+| Atributo | Detalle |
+| :--- | :--- |
+| **Descripción** | Permite a cualquier empleado de la organización reportar una falla o solicitud técnica mediante un formulario web estandarizado que asocia automáticamente su identidad al caso. |
+| **Actores** | Solicitante (Empleado). |
+| **Precondiciones** | El usuario debe estar autenticado en el sistema (RF01). |
+| **Postcondiciones** | El ticket queda registrado con estado "Nuevo" y visible en la bandeja de entrada del equipo técnico (RF06). |
+
+#### 🔁 Secuencia Normal
+| # | Acción (Actor) | Reacción (Sistema) |
+| :-: | :--- | :--- |
+| **1** | El Solicitante ingresa a la opción "Nuevo Ticket". | El sistema visualiza el formulario web estandarizado y asocia automáticamente el ticket al nombre del usuario logueado (RF03, RF04). |
+| **2** | El Solicitante selecciona la Categoría del incidente, ingresa la Descripción y selecciona el nivel de Urgencia (RF03). | No aplica. |
+| **3** | El Solicitante opcionalmente adjunta archivos de evidencia como capturas de pantalla, imágenes o PDF (RF08). | No aplica. |
+| **4** | El Solicitante opcionalmente enlaza un activo informático específico (hardware o software) al ticket (RF09). | No aplica. |
+| **5** | El Solicitante hace clic en el botón "Añadir". | El sistema genera un número de ticket único y correlativo de forma automática al momento de confirmar el registro (RF05). |
+| **6** | No aplica. | El sistema cambia y muestra el estado del ticket a "Nuevo" dentro del flujo definido (RF06). |
+| **7** | No aplica. | El sistema envía un correo automático al empleado y al área de sistemas confirmando la creación del ticket con su número único (RF07). |
+
+#### ⚠️ Excepciones
+| # | Acción (Actor) | Reacción (Sistema) |
+| :-: | :--- | :--- |
+| **q** | El usuario intenta adjuntar archivos que superan el tamaño máximo configurable (RF08). | El sistema rechaza la carga del archivo y lanza un mensaje informativo. |
+
+| Parámetro | Valor |
+| :--- | :--- |
+| **Importancia** | Vital. |
+| **Urgencia** | Inmediatamente. |
+| **Comentarios** | No aplica. |
+
+---
+
+### 📄 CU002: Asignación y Priorización de Ticket
+
+| Atributo | Detalle |
+| :--- | :--- |
+| **Descripción** | Permite al Jefe de Sistemas evaluar los incidentes entrantes utilizando la matriz de prioridad calculada automáticamente, ordenando por defecto la bandeja de entrada para visualizar los casos críticos y delegarlos manualmente. |
+| **Actores** | Jefe de Sistemas. |
+| **Precondiciones** | Existen tickets en estado "Nuevo" en la bandeja de entrada (RF06). |
+| **Postcondiciones** | El ticket cambia a estado "En curso" dentro del flujo y queda asignado al técnico correspondiente (RF06, RF10). |
+
+#### 🔁 Secuencia Normal
+| # | Acción (Actor) | Reacción (Sistema) |
+| :-: | :--- | :--- |
+| **1** | El Jefe de Sistemas ingresa al panel de control de tickets. | El sistema muestra la pantalla de inicio con gráficos en tiempo real (RF24) y calcula de forma automática la Prioridad del ticket (Baja, Media, Alta, Crítica) cruzando la Urgencia cargada por el usuario y el Impacto técnico preliminar definido (RF07). |
+| **2** | El Jefe de Sistemas visualiza la bandeja predeterminada. | El sistema ordena de forma automática y predeterminada la lista de tickets, mostrando los de prioridad "Crítica" y "Alta" en primer lugar para agilizar la gestión. |
+| **3** | El Jefe de Sistemas aplica el motor de búsqueda con filtros avanzados si requiere segmentar por área o fecha (RF20). | No aplica. |
+| **4** | El Jefe de Sistemas selecciona un técnico de la lista y le asigna el caso manualmente (RF10). | El sistema cambia el estado del ticket a "En curso" (RF06) e incluye la sección de chat o seguimiento para interactuar (RF11). |
+
+#### ⚠️ Excepciones
+*No aplica.*
+
+| Parámetro | Valor |
+| :--- | :--- |
+| **Importancia** | Vital. |
+| **Urgencia** | Inmediata. |
+| **Comentarios** | No aplica. |
+
+---
+
+### 📄 CU003: Derivación a Soporte Externo
+
+| Atributo | Detalle |
+| :--- | :--- |
+| **Descripción** | Permite a un técnico interno transferir la resolución de un incidente a un proveedor o especialista externo registrado, congelando los tiempos de resolución del sistema durante su intervención. |
+| **Actores** | Técnico de Sistemas, Especialista Externo. |
+| **Precondiciones** | El ticket se encuentra en estado "En curso" (RF06). |
+| **Postcondiciones** | El ticket queda en estado "En espera" con el contador de tiempo de resolución pausado automáticamente (RF06, RF17). |
+
+#### 🔁 Secuencia Normal
+| # | Acción (Actor) | Reacción (Sistema) |
+| :-: | :--- | :--- |
+| **1** | El Técnico de Sistemas determina que el problema requiere la intervención de un proveedor externo. | No aplica. |
+| **2** | El Técnico selecciona de la lista al proveedor de soporte externo correspondiente, registrando los datos de contacto y el motivo de la derivación (RF16). | El sistema cambia el estado del ticket a "En espera" dentro del flujo definido (RF06). |
+| **3** | No aplica. | El sistema pausa automáticamente el contador de tiempo de resolución al pasar al estado "En espera" por derivación externa (RF17). |
+| **4** | El Especialista Externo ingresa al ticket, intercambia mensajes en la sección de seguimiento (RF11) y documenta el tiempo exacto (horas/minutos) dedicado a la resolución de la tarea (RF12). | El sistema registra de forma inmutable qué especialista realizó los cambios, incluyendo fecha y hora (RF21). |
+
+#### ⚠️ Excepciones
+*No aplica.*
+
+| Parámetro | Valor |
+| :--- | :--- |
+| **Importancia** | Importante. |
+| **Urgencia** | Media. |
+| **Comentarios** | No aplica. |
+
+---
+
+### 📄 CU004: Validación y Cierre de Ticket
+
+| Atributo | Detalle |
+| :--- | :--- |
+| **Descripción** | Permite registrar la solución de un incidente en curso (validando la intervención externa si corresponde) y cambiar su estado para que el empleado evalúe la conformidad, habilitando también el cierre administrativo si el usuario no responde. |
+| **Actores** | Técnico de Sistemas, Solicitante, Jefe de Sistemas. |
+| **Precondiciones** | El ticket se encuentra originalmente en estado "En curso" o asignado para revisión en la bandeja (RF06). |
+| **Postcondiciones** | El ticket cambia a estado "Cerrado" dentro del flujo de forma definitiva y la acción queda registrada en la auditoría inmutable del sistema (RF06, RF21). |
+
+#### 🔁 Secuencia Normal
+| # | Acción (Actor) | Reacción (Sistema) |
+| :-: | :--- | :--- |
+| **1** | El Técnico de Sistemas finaliza las tareas de soporte interno (o valida obligatoriamente la solución cargada por el especialista externo antes de permitir avanzar con el cierre, según RF18). | No aplica. |
+| **2** | El Técnico registra la solución definitiva en el sistema y cambia manualmente el estado del ticket a "Resuelto" (RF14, RF06). | El sistema envía un correo al empleado solicitante cuando el ticket pasa a estado "Resuelto", detallando la solución aplicada (RF13). |
+| **3** | El Solicitante recibe la notificación, ingresa al sistema y utiliza la opción habilitada para aprobar la solución y brindar su conformidad (RF14). | El sistema procesa la conformidad del usuario y cambia el estado del ticket a "Cerrado" de forma automática (RF14, RF06). |
+
+#### ⚠️ Excepciones
+| # | Acción (Actor) | Reacción (Sistema) |
+| :-: | :--- | :--- |
+| **p** | El ticket se encuentra en estado "Resuelto" y no se recibe respuesta por parte del solicitante para cerrarlo debido a la falta de compromiso interno técnico (RF15). | El Jefe de Sistemas cambia manualmente el estado del ticket para proceder a cerrarlo (RF15, RF06), registrándose la transacción con usuario, fecha y hora en el registro inmutable de auditoría (RF21). |
+
+| Parámetro | Valor |
+| :--- | :--- |
+| **Importancia** | Importante. |
+| **Urgencia** | Vital. |
+| **Comentarios** | No aplica. |
