@@ -43,34 +43,48 @@ El objetivo principal de este proyecto es **evaluar la viabilidad de implementar
 
 ---
 
-## 2.0 Historia y contexto de la empresa – Historia – Misión.
-Historia y contexto.
-Logística y Minería S.A. es una empresa de transporte de carga con más de 20 años de trayectoria. Comenzó como un emprendimiento familiar y, con el paso del tiempo, fue incorporando personal externo a medida que crecía. Hoy se compone de distintas áreas: sistemas, compras, mantenimiento, administración, ventas y logística.
-La expansión de la empresa trajo aparejados problemas de comunicación interna y dificultades en la gestión de incidencias técnicas, lo que motivó la búsqueda de soluciones tecnológicas más formales.
-Historia de la empresa.
-Desde sus orígenes, la empresa se dedicó al transporte de carga para el sector minero e industrial. Con el crecimiento de la demanda, amplió su estructura organizativa y diversificar los servicios ofrecidos. La experiencia adquirida en dos décadas la posicionó como un actor confiable dentro del rubro.
-Misión
-Logística y Minería S.A. Tiene como misión ofrecer soluciones integrales y confiables de transporte de carga para el sector minero e industrial, asegurando eficiencia, seguridad y calidad en cada servicio. La empresa busca optimizar sus procesos internos mediante la innovación tecnológica, la estandarización de procedimientos y una comunicación efectiva entre áreas. A través de la mejora continua y la incorporación de herramientas que fortalezcan la gestión operativa, Logística y Minería S.A. trabaja para consolidarse como un referente del sector, promoviendo un crecimiento sostenible y una atención ágil y transparente hacia sus clientes.
+## 2.0 Historia y contexto de la empresa – Historia – Misión
 
+---
 
-Visión.
-Logística y Minería S.A. aspira a consolidarse como la empresa líder en transporte de carga para el sector minero e industrial, destacándose por la confiabilidad de sus servicios, la innovación en la gestión tecnológica y la eficiencia en la comunicación interna, impulsando un crecimiento sostenible y aportando mayor valor a sus clientes.
-Objetivos.
-●	Optimizar la gestión de incidencias técnicas mediante la implementación de un sistema centralizado que garantice trazabilidad y eficiencia.
-●	Mejorar la comunicación entre las diferentes áreas, evitando demoras y desorden en los procesos.
-●	Estandarizar los procedimientos de soporte técnico, reemplazando prácticas informales por métodos formales y documentados.
-●	Incrementar la eficiencia operativa a través de un control más preciso de los recursos tecnológicos e inventario.
-●	Impulsar la innovación tecnológica como motor de crecimiento y competitividad en el sector.
+### ⏳ Historia y Contexto
 
+**Logística y Minería S.A.** es una empresa de transporte de carga con más de 20 años de trayectoria. Comenzó como un emprendimiento familiar y, con el paso del tiempo, fue incorporando personal externo a medida que crecía. 
 
-Actualmente la empresa cuenta con las siguientes áreas:
-●	Área de sistemas 
-●	Área de compras
-●	Área de mantenimiento
-●	Área de administración
-●	Área de ventas
-●	Área de logística
+Hoy se compone de distintas áreas clave: sistemas, compras, mantenimiento, administración, ventas y logística. La rápida expansión de la empresa trajo aparejados problemas de comunicación interna y dificultades en la gestión de incidencias técnicas, lo que motivó la búsqueda de soluciones tecnológicas más formales como GLPI. 
 
+Desde sus orígenes, la empresa se dedicó al transporte de carga para el sector minero e industrial. Con el crecimiento de la demanda, amplió su estructura organizativa y diversificó los servicios ofrecidos. La experiencia adquirida en dos décadas la posicionó como un actor confiable dentro del rubro.
+
+---
+
+### 📜 Filosofía Corporativa
+
+> 🎯 **Misión:** Ofrecer soluciones integrales y confiables de transporte de carga para el sector minero e industrial, asegurando eficiencia, seguridad y calidad en cada servicio. La empresa busca optimizar sus procesos internos mediante la innovación tecnológica, la estandarización de procedimientos y una comunicación efectiva entre áreas. A través de la mejora continua y la incorporación de herramientas que fortalezcan la gestión operativa, Logística y Minería S.A. trabaja para consolidarse como un referente del sector, promoviendo un crecimiento sostenible y una atención ágil y transparente hacia sus clientes.
+
+> 👁️ **Visión:** Aspirar a consolidarse como la empresa líder en transporte de carga para el sector minero e industrial, destacándose por la confiabilidad de sus servicios, la innovación en la gestión tecnológica y la eficiencia en la comunicación interna, impulsando un crecimiento sostenible y aportando mayor valor a sus clientes.
+
+---
+
+### 📈 Objetivos Institucionales
+
+Para materializar esta visión, la organización se enfoca en los siguientes pilares operativos:
+* 🎯 **Optimizar la gestión:** Controlar las incidencias técnicas mediante la implementación de un sistema centralizado que garantice trazabilidad y eficiencia.
+* 🗣️ **Mejorar la comunicación:** Conectar las diferentes áreas evitando demoras, ruidos en los mensajes y desorden en los procesos diarios.
+* 📋 **Estandarizar procedimientos:** Formalizar el soporte técnico reemplazando prácticas informáticas informales por métodos estructurados y documentados.
+* ⚡ **Incrementar la eficiencia:** Llevar un control más preciso de los recursos tecnológicos e inventarios de la empresa.
+* 🚀 **Impulsar la innovación:** Utilizar la tecnología como el motor principal de crecimiento y competitividad en el sector.
+
+---
+
+### 🏢 Estructura Organizativa (Áreas Actuales)
+
+La plataforma de mesa de ayuda prestará soporte directo a los siguientes departamentos de la empresa:
+1. 💻 **Área de Sistemas**
+2. 🛒 **Área de Compras**
+3. 🔧 **Área de Mantenimiento**
+4. 💼 **Área de Administración**
+5. 📈 **Área de Ventas**
+6. 🚚 **Área de Logística**
 
 ---
 
