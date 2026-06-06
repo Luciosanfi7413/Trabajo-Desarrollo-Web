@@ -107,21 +107,21 @@ Para obtener información precisa sobre la situación actual de **Logística y M
 Para comprender a fondo el proceso actual de gestión de incidencias, se aplicó el siguiente esquema de consulta según el rol:
 
 #### 👥 1. Mandos Altos (Dirección / Gerencia)
-* ** Pregunta:** *¿Cómo gestionan actualmente los problemas técnicos que surgen en la empresa? ¿Cuál consideran que es la principal dificultad de este método? ¿Qué impacto creen que tiene esta situación en la empresa?*
+* **Pregunta:** *¿Cómo gestionan actualmente los problemas técnicos que surgen en la empresa? ¿Cuál consideran que es la principal dificultad de este método? ¿Qué impacto creen que tiene esta situación en la empresa?*
 * **💬 Respuesta Corporativa:** 
   > "Hoy en día no tenemos un sistema formal. Cada sector se comunica con el área de sistemas como puede: a veces por teléfono, otras por WhatsApp, incluso personalmente. Luego, el área de sistemas lleva un registro en una planilla informática. 
   >
   > Nuestra principal dificultad es que **no tenemos trazabilidad**. Muchas veces no sabemos cuánto tarda en resolverse un problema ni en qué etapa está. Además, cada empleado usa un canal distinto y eso genera desorden. Perdemos tiempo y eficiencia de manera constante. Cuando dependemos de un especialista externo, la comunicación se vuelve aún más lenta porque pasa por correos y no queda bien documentada."
 
 #### 👥 2. Mandos Medios (Jefe de Sistemas)
-* ** Pregunta:** *¿Cómo reciben actualmente los pedidos de soporte técnico? ¿Qué hacen ustedes cuando reciben un pedido?*
+* **Pregunta:** *¿Cómo reciben actualmente los pedidos de soporte técnico? ¿Qué hacen ustedes cuando reciben un pedido?*
 * **💬 Respuesta Técnica:** 
   > "Los pedidos llegan por múltiples canales informales: algunos empleados nos escriben por WhatsApp, otros mandan un correo, a veces vienen directamente a la oficina a comentarlo, e incluso en ocasiones dejan una nota de papel. No hay un único canal, lo cual nos obliga a estar atentos a diferentes medios al mismo tiempo. 
   >
   > Lo primero que hacemos es registrar el incidente en una **planilla manual** que tenemos en el área. Después evaluamos la prioridad del problema: si es algo que podemos resolver internamente, lo atendemos lo antes posible. Si no contamos con los conocimientos o herramientas necesarias, lo derivamos a un especialista externo. Una vez que está resuelto, volvemos a registrar en la planilla cómo se solucionó y avisamos al área que lo reportó, generalmente por el mismo canal por el que nos contactaron."
 
 #### 👥 3. Mandos Operativos (Empleados / Usuarios de PC)
-* ** Pregunta:** *Cuando tenés un problema con tu computadora o con el software, ¿qué hacés? ¿Te queda algún comprobante o registro de que reportaste el problema? Si el problema se deriva a un especialista externo, ¿cómo te enterás?*
+* **Pregunta:** *Cuando tenés un problema con tu computadora o con el software, ¿qué hacés? ¿Te queda algún comprobante o registro de que reportaste el problema? Si el problema se deriva a un especialista externo, ¿cómo te enterás?*
 * **💬 Respuesta del Usuario:** 
   > "Generalmente le mando un mensaje por WhatsApp al chico de sistemas, o si lo cruzo en la oficina se lo digo directamente. Si estoy apurado porque necesito seguir trabajando, trato de que la comunicación sea lo más rápida posible. 
   >
