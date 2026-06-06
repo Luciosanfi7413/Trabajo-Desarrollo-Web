@@ -16,13 +16,14 @@
 
 ## 📌 Índice del Documento
 1. [1.0 Introducción y Objetivos](#10-introducción-y-objetivos)
-2. [2.0 Historia y contexto de la empresa – Historia – Misión](#20-Historia y contexto de la empresa – Historia – Misión.)
-3. [3.0 3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas](#30-3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas)
-4. [4.0 Identificación de stakeholders](#40-Identificación de stakeholders)
+2. [2.0 Historia y contexto de la empresa – Historia – Misión](#20-historia-y-contexto-de-la-empresa--historia--misión)
+3. [3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas](#30-planeamiento-del-relevamiento--entrevistas--observaciones-directas)
+4. [4.0 Identificación de stakeholders](#40-identificación-de-stakeholders)
 5. [5.0 Requisitos Funcionales y No Funcionales](#50-requisitos-funcionales-y-no-funcionales)
 6. [6.0 Historias de Usuario](#60-historias-de-usuario)
 7. [7.0 Casos de Uso](#70-casos-de-uso)
 8. [8.0 Modelo de Datos (DER)](#80-modelo-de-datos-der)
+
 
 ---
 
