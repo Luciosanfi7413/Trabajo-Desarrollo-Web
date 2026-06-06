@@ -41,17 +41,6 @@ El objetivo principal de este proyecto es **evaluar la viabilidad de implementar
 * **🛠️ Estandarización:** Normalizar procesos que actualmente se encuentran dispersos y manuales.
 * **📈 Control Total:** Lograr un mayor y más estricto control de todos los recursos informáticos y activos de la empresa.
 
-
----
-
-## 1.0 Introducción y Objetivos
-Introducción.
-Somos una empresa que ofrece la implementación de GLPI, enfocada en clientes que todavía no utilizan herramientas formales de gestión de tickets, inventario ni soporte técnico. Para este trabajo se tomó como caso de estudio a Logística y Minería S.A., una empresa de transporte de carga con más de 20 años de experiencia, que actualmente enfrenta problemas de comunicación interna y de gestión de incidencias.
-El presente proyecto busca analizar el proceso actual de soporte técnico de la empresa y proponer la implementación de GLPI como solución tecnológica. A lo largo del documento se realizará un relevamiento, un análisis de los procesos actuales y una propuesta de mejora, con su respectivo estudio de factibilidad.
-Objetivo.
-El objetivo principal de este proyecto es evaluar la viabilidad de implementar GLPI en Logística y Minería S.A. con el fin de mejorar la trazabilidad de incidencias, optimizar la comunicación entre áreas y aumentar la eficiencia en la resolución de problemas técnicos. Además, se busca estandarizar procesos actualmente dispersos y manuales, logrando un mayor control de los recursos informáticos de la empresa.
-
-
 ---
 
 ## 2.0 Historia y contexto de la empresa – Historia – Misión.
