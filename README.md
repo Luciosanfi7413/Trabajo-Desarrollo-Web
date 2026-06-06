@@ -89,37 +89,53 @@ La plataforma de mesa de ayuda prestará soporte directo a los siguientes depart
 ---
 
 ## 3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas
-Planeamiento del relevamiento.
-Para obtener información precisa sobre la situación actual, se planificó un relevamiento que incluyó entrevistas a distintos niveles de la organización (mandos altos, medios y operativos) y observación directa de los procesos cotidianos en el área de sistemas. El objetivo fue identificar falencias, comprender los canales de comunicación y recolectar datos para el modelado de procesos y la propuesta de mejora.
-Entrevistas.
-Se entrevistó a representantes de mandos altos, medios y operativos, con el fin de obtener una visión completa de la problemática.
-Para comprender a fondo el proceso actual de gestión de incidencias que utiliza la empresa realizamos el siguiente cuestionario:
-Mandos altos.
-¿Cómo gestionan actualmente los problemas técnicos que surgen en la empresa?
-¿Cuál consideran que es la principal dificultad de este método?
-¿Qué impacto creen que tiene esta situación en la empresa?
-Respuestas.
-Hoy en día no tenemos un sistema formal. Cada sector se comunica con el área de sistemas como puede: a veces por teléfono, otras por WhatsApp, incluso personalmente. Luego, el área de sistemas lleva un registro en una planilla.
-Que no tenemos trazabilidad. Muchas veces no sabemos cuánto tarda en resolverse un problema ni en qué etapa está. Además, cada empleado usa un canal distinto y eso genera desorden.
-Perdemos tiempo y eficiencia. Además, cuando dependemos de un especialista externo, la comunicación se vuelve aún más lenta porque pasa por correos y no queda bien documentada.
-Mandos medios(Jefe de sistemas).
-¿Cómo reciben actualmente los pedidos de soporte técnico?
-¿Qué hacen ustedes cuando reciben un pedido?
-Respuestas.
-Los pedidos llegan por múltiples canales: algunos empleados nos escriben por WhatsApp, otros mandan un correo, a veces vienen directamente a la oficina a comentarlo, e incluso en ocasiones dejan una nota. No hay un único canal, lo cual nos obliga a estar atentos a diferentes medios al mismo tiempo.
-Lo primero que hacemos es registrar el incidente en una planilla manual que tenemos en el área. Después evaluamos la prioridad del problema: si es algo que podemos resolver internamente, lo atendemos lo antes posible. Si no contamos con los conocimientos o herramientas necesarias, lo derivamos a un especialista externo. Una vez que está resuelto, volvemos a registrar en la planilla cómo se solucionó y avisamos al área que lo reportó, generalmente por el mismo canal en el que nos contactaron.
-Mandos Operativos (ej: Empleados que usan la PC y el software a diario)
-Cuando tenés un problema con tu computadora o con el software, ¿qué hacés?
-¿Te queda algún comprobante o registro de que reportaste el problema?
-Si el problema se deriva a un especialista externo, ¿cómo te enteras?
-Respuestas.
-Generalmente le mandó un mensaje por WhatsApp al de sistemas, o si lo cruzo en la oficina se lo digo directamente. Si estoy apurado porque necesito seguir trabajando, trato de que la comunicación sea lo más rápida posible.
-No, salvo el chat en el celular o el correo si lo mandé por ahí. Pero después no tengo forma de ver en qué estado está, ni cuándo lo van a resolver.
-Me avisan después de que ya se resolvió, pero no sé bien qué hicieron ni cómo lo arreglaron.
-Observaciones directas.
-Durante la observación de los procesos se identificó que los reclamos se realizan a través de múltiples canales informales como WhatsApp, correo electrónico, notas escritas o comunicación verbal. El área de sistemas utiliza una planilla manual para registrar los casos, sin un procedimiento estandarizado. Esto genera falta de trazabilidad, dificultad para hacer seguimiento y ausencia de estadísticas que permitan medir tiempos de resolución o frecuencia de incidencias.
 
+---
 
+### 📅 Estrategia del Relevamiento
+
+Para obtener información precisa sobre la situación actual de **Logística y Minería S.A.**, se planificó y ejecutó un relevamiento integral estructurado en dos metodologías clave:
+1. **Entrevistas dirigidas:** Aplicadas a los distintos niveles de la organización (mandos altos, medios y operativos) para consolidar una visión completa de la problemática.
+2. **Observación directa:** Análisis en el terreno de los procesos cotidianos ejecutados en el área de sistemas.
+
+> 🎯 **Objetivo:** Identificar falencias operativas, comprender las deficiencias en los canales de comunicación actuales y recolectar datos empíricos para el modelado de procesos y la propuesta de mejora definitiva.
+
+---
+
+### 💬 Cuestionario y Resultados de las Entrevistas
+
+Para comprender a fondo el proceso actual de gestión de incidencias, se aplicó el siguiente esquema de consulta según el rol:
+
+#### 👥 1. Mandos Altos (Dirección / Gerencia)
+* ** Pregunta:** *¿Cómo gestionan actualmente los problemas técnicos que surgen en la empresa? ¿Cuál consideran que es la principal dificultad de este método? ¿Qué impacto creen que tiene esta situación en la empresa?*
+* **💬 Respuesta Corporativa:** 
+  > "Hoy en día no tenemos un sistema formal. Cada sector se comunica con el área de sistemas como puede: a veces por teléfono, otras por WhatsApp, incluso personalmente. Luego, el área de sistemas lleva un registro en una planilla informática. 
+  >
+  > Nuestra principal dificultad es que **no tenemos trazabilidad**. Muchas veces no sabemos cuánto tarda en resolverse un problema ni en qué etapa está. Además, cada empleado usa un canal distinto y eso genera desorden. Perdemos tiempo y eficiencia de manera constante. Cuando dependemos de un especialista externo, la comunicación se vuelve aún más lenta porque pasa por correos y no queda bien documentada."
+
+#### 👥 2. Mandos Medios (Jefe de Sistemas)
+* ** Pregunta:** *¿Cómo reciben actualmente los pedidos de soporte técnico? ¿Qué hacen ustedes cuando reciben un pedido?*
+* **💬 Respuesta Técnica:** 
+  > "Los pedidos llegan por múltiples canales informales: algunos empleados nos escriben por WhatsApp, otros mandan un correo, a veces vienen directamente a la oficina a comentarlo, e incluso en ocasiones dejan una nota de papel. No hay un único canal, lo cual nos obliga a estar atentos a diferentes medios al mismo tiempo. 
+  >
+  > Lo primero que hacemos es registrar el incidente en una **planilla manual** que tenemos en el área. Después evaluamos la prioridad del problema: si es algo que podemos resolver internamente, lo atendemos lo antes posible. Si no contamos con los conocimientos o herramientas necesarias, lo derivamos a un especialista externo. Una vez que está resuelto, volvemos a registrar en la planilla cómo se solucionó y avisamos al área que lo reportó, generalmente por el mismo canal por el que nos contactaron."
+
+#### 👥 3. Mandos Operativos (Empleados / Usuarios de PC)
+* ** Pregunta:** *Cuando tenés un problema con tu computadora o con el software, ¿qué hacés? ¿Te queda algún comprobante o registro de que reportaste el problema? Si el problema se deriva a un especialista externo, ¿cómo te enterás?*
+* **💬 Respuesta del Usuario:** 
+  > "Generalmente le mando un mensaje por WhatsApp al chico de sistemas, o si lo cruzo en la oficina se lo digo directamente. Si estoy apurado porque necesito seguir trabajando, trato de que la comunicación sea lo más rápida posible. 
+  >
+  > Con respecto al comprobante... **no, no me queda nada**, salvo el historial del chat en el celular o el correo si lo mandé por ahí. Pero después no tengo forma de ver en qué estado está mi pedido, ni cuándo lo van a resolver. Me avisan después de que ya se resolvió, pero no sé bien qué hicieron ni cómo lo arreglaron."
+
+---
+
+### 🔍 Hallazgos de la Observación Directa
+
+Durante la fase de observación en el campo de trabajo, se identificaron de forma objetiva los siguientes diagnósticos críticos sobre los procesos vigentes:
+
+* 🔀 **Omnicanalidad Informal:** Los reclamos y solicitudes se canalizan de manera desestructurada a través de WhatsApp, correos electrónicos particulares, notas escritas o comunicación verbal directa.
+* 📝 **Falta de Estandarización:** El área de sistemas utiliza una planilla manual para asentar los casos, careciendo por completo de un procedimiento o formulario estandarizado de entrada.
+* ❌ **Ausencia de Indicadores (Métricas):** El escenario actual genera una total **falta de trazabilidad**, severas dificultades para realizar el seguimiento de fallas abiertas y una ausencia absoluta de estadísticas que permitan medir los tiempos de resolución (SLA) o la frecuencia crítica de las incidencias.
 ---
 
 ## 4.0 Identificación de stakeholders
