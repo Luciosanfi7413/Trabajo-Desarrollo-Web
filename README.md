@@ -16,9 +16,9 @@
 
 ## 📌 Índice del Documento
 1. [1.0 Introducción y Objetivos](#10-introducción-y-objetivos)
-2. [2.0 Alcance del Sistema](#20-alcance-del-sistema)
-3. [3.0 Roles y Perfiles de Usuario](#30-roles-y-perfiles-de-usuario)
-4. [4.0 Ciclo de Vida del Ticket](#40-ciclo-de-vida-del-ticket)
+2. [2.0 Historia y contexto de la empresa – Historia – Misión.](#20 Historia y contexto de la empresa – Historia – Misión.)
+3. [3.0 3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas](#30-3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas)
+4. [4.0 Identificación de stakeholders](#40-Identificación de stakeholders)
 5. [5.0 Requisitos Funcionales y No Funcionales](#50-requisitos-funcionales-y-no-funcionales)
 6. [6.0 Historias de Usuario](#60-historias-de-usuario)
 7. [7.0 Casos de Uso](#70-casos-de-uso)
