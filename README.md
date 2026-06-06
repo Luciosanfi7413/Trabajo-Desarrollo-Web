@@ -36,7 +36,7 @@ El objetivo principal de este proyecto es evaluar la viabilidad de implementar G
 
 ---
 
-## 2.0 Alcance del Sistema
+## 2.0 Historia y contexto de la empresa – Historia – Misión.
 Historia y contexto.
 Logística y Minería S.A. es una empresa de transporte de carga con más de 20 años de trayectoria. Comenzó como un emprendimiento familiar y, con el paso del tiempo, fue incorporando personal externo a medida que crecía. Hoy se compone de distintas áreas: sistemas, compras, mantenimiento, administración, ventas y logística.
 La expansión de la empresa trajo aparejados problemas de comunicación interna y dificultades en la gestión de incidencias técnicas, lo que motivó la búsqueda de soluciones tecnológicas más formales.
@@ -67,7 +67,7 @@ Actualmente la empresa cuenta con las siguientes áreas:
 
 ---
 
-## 3.0 Roles y Perfiles de Usuario
+## 3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas
 Planeamiento del relevamiento.
 Para obtener información precisa sobre la situación actual, se planificó un relevamiento que incluyó entrevistas a distintos niveles de la organización (mandos altos, medios y operativos) y observación directa de los procesos cotidianos en el área de sistemas. El objetivo fue identificar falencias, comprender los canales de comunicación y recolectar datos para el modelado de procesos y la propuesta de mejora.
 Entrevistas.
@@ -101,7 +101,7 @@ Durante la observación de los procesos se identificó que los reclamos se reali
 
 ---
 
-## 4.0 Ciclo de Vida del Ticket
+## 4.0 Identificación de stakeholders
 A continuación se identifican las partes interesadas relevantes para el Sistema de Gestión de Solicitudes y Mesa de Ayuda Operativa adaptado al sector logístico. Para cada una se describe su rol y se justifica por qué resulta clave para el proyecto.
 Choferes y Operarios de Depósito (Solicitantes).
 Son el personal operativo de primera línea que utiliza activamente los recursos físicos de la empresa. Su rol consiste en reportar incidentes técnicos de hardware o software (computadoras de abordo, escáneres portátiles PDA, terminales de stock o impresoras térmicas de etiquetas) que impidan el normal desarrollo de sus tareas de picking, despacho o distribución.
