@@ -14,15 +14,32 @@
 
 ---
 
-## 📌 Índice del Documento
-1. [1.0 Introducción y Objetivos](#10-introducción-y-objetivos)
-2. [2.0 Historia y contexto de la empresa – Historia – Misión](#20-historia-y-contexto-de-la-empresa--historia--misión)
-3. [3.0 Planeamiento del relevamiento – Entrevistas – Observaciones directas](#30-planeamiento-del-relevamiento--entrevistas--observaciones-directas)
-4. [4.0 Identificación de stakeholders](#40-identificación-de-stakeholders)
-5. [5.0 Requisitos Funcionales y No Funcionales](#50-requisitos-funcionales-y-no-funcionales)
-6. [6.0 Historias de Usuario](#60-historias-de-usuario)
-7. [7.0 Casos de Uso](#70-casos-de-uso)
-8. [8.0 Modelo de Datos (DER)](#80-modelo-de-datos-der)
+## 1.0 Introducción y Objetivos
+
+---
+
+### 🏢 Introducción y Contexto
+
+Somos una empresa que ofrece la **implementación de GLPI**, enfocada en clientes que todavía no utilizan herramientas formales de gestión de tickets, inventario ni soporte técnico. 
+
+> 🔍 **Caso de Estudio:** Para este trabajo se tomó como caso de estudio a **Logística y Minería S.A.**, una empresa de transporte de carga con más de 20 años de experiencia, que actualmente enfrenta problemas de comunicación interna y de gestión de incidencias.
+
+El presente proyecto busca analizar el proceso actual de soporte técnico de la empresa y proponer la implementación de GLPI como solución tecnológica. A lo largo del documento se realizará:
+* 📑 Un relevamiento detallado.
+* 📊 Un análisis de los procesos actuales.
+* 💡 Una propuesta de mejora institucional.
+* 💰 Su respectivo estudio de factibilidad técnica y económica.
+
+---
+
+### 🎯 Objetivos del Proyecto
+
+El objetivo principal de este proyecto es **evaluar la viabilidad de implementar GLPI** en Logística y Minería S.A. con los siguientes fines estratégicos:
+
+* **🔄 Optimización Operativa:** Mejorar la trazabilidad de incidencias y optimizar la comunicación directa entre las diferentes áreas.
+* **⚡ Eficiencia Técnica:** Aumentar la eficiencia general en la resolución de problemas técnicos cotidianos.
+* **🛠️ Estandarización:** Normalizar procesos que actualmente se encuentran dispersos y manuales.
+* **📈 Control Total:** Lograr un mayor y más estricto control de todos los recursos informáticos y activos de la empresa.
 
 
 ---
