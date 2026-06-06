@@ -180,58 +180,84 @@ A continuación, se identifican las partes interesadas relevantes para el **Sist
 
 ## 5.0 Requisitos Funcionales y No Funcionales
 
+---
+
 ### 5.1. Requerimientos Funcionales (RF)
 
-#### Módulo 1 — Autenticación y Permisos
-* **RF01:** El sistema debe permitir el inicio de sesión mediante usuario y contraseña únicos para cada empleado de la organización.
-* **RF02:** El sistema debe restringir las funciones según cuatro perfiles: Administrador, Técnico de Sistemas, Especialista Externo y Solicitante (empleados de Compras, Ventas, Logística, etc.).
+A continuación, se detallan las funciones específicas que el sistema de mesa de ayuda (GLPI) ejecutará, organizadas por módulos operativos:
 
-#### Módulo 2 — Gestión y Registro de Tickets
-* **RF03:** El sistema debe proveer un formulario web estandarizado para que los empleados registren incidentes ingresando: categoría, descripción y urgencia.
-* **RF04:** Al abrir un formulario, el sistema debe asociar el ticket al nombre del usuario logueado.
-* **RF05:** El sistema debe generar un número de ticket único y correlativo de forma automática al momento de confirmar el registro.
-* **RF06:** El sistema debe cambiar y mostrar el estado de los tickets a través de un flujo definido: Nuevo, En curso, En espera, Resuelto y Cerrado.
-* **RF07:** El sistema debe enviar un correo automático al empleado y al área de sistemas confirmando la creación del ticket con su número único.
-* **RF08:** El sistema debe permitir a los usuarios y técnicos adjuntar archivos (capturas de pantalla, imágenes, PDF) con un tamaño máximo configurable.
-* **RF09:** El sistema debe permitir enlazar un activo informático específico (hardware o software) a un ticket.
+#### 🔐 Módulo 1 — Autenticación y Permisos
+| ID | Descripción del Requerimiento Funcional |
+| :---: | :--- |
+| **RF01** | El sistema debe permitir el inicio de sesión mediante usuario y contraseña únicos para cada empleado de la organización. |
+| **RF02** | El sistema debe restringir las funciones según cuatro perfiles: Administrador, Técnico de Sistemas, Especialista Externo y Solicitante (empleados de Compras, Ventas, Logística, etc.). |
 
-#### Módulo 3 — Resolución y Seguimiento de Incidentes
-* **RF10:** El sistema debe permitir al Jefe de Sistemas asignar tickets de forma manual a cualquier técnico del área.
-* **RF11:** El sistema debe incluir un chat o sección de seguimiento dentro del ticket para que el técnico y el empleado intercambien mensajes sobre el avance del caso.
-* **RF12:** El sistema debe permitir a los técnicos documentar el tiempo exacto (horas/minutos) dedicado a la resolución de cada tarea interna o externa.
-* **RF13:** El sistema debe enviar un correo al empleado solicitante cuando el ticket pase a estado "Resuelto", detallando la solución aplicada.
-* **RF14:** El sistema debe permitir al técnico cambiar el estado del ticket a "Resuelto". Asimismo, debe habilitar una opción para que el empleado solicitante apruebe la solución y brinde su conformidad, permitiendo el cierre definitivo del caso de forma automática o manual según su interacción.
-* **RF15:** En caso de contar con un ticket en estado “Resuelto” y no recibir respuesta por parte del solicitante para cerrarlo, el sistema deberá permitir al jefe de sistema cambiar el estado del ticket a cerrarlo.
+#### 📝 Módulo 2 — Gestión y Registro de Tickets
+| ID | Descripción del Requerimiento Funcional |
+| :---: | :--- |
+| **RF03** | El sistema debe proveer un formulario web estandarizado para que los empleados registren incidentes ingresando: categoría, descripción y urgencia. |
+| **RF04** | Al abrir un formulario, el sistema debe asociar el ticket al nombre del usuario logueado. |
+| **RF05** | El sistema debe generar un número de ticket único y correlativo de forma automática al momento de confirmar el registro. |
+| **RF06** | El sistema debe cambiar y mostrar el estado de los tickets a través de un flujo definido: Nuevo, En curso, En espera, Resuelto y Cerrado. |
+| **RF07** | El sistema debe enviar un correo automático al empleado y al área de sistemas confirmando la creación del ticket con su número único. |
+| **RF08** | El sistema debe permitir a los usuarios y técnicos adjuntar archivos (capturas de pantalla, imágenes, PDF) con un tamaño máximo configurable. |
+| **RF09** | El sistema debe permitir enlazar un activo informático específico (hardware o software) a un ticket. |
 
-#### Módulo 4 — Integración y Soporte Externo
-* **RF16:** El sistema debe permitir la asignación de tickets a proveedores de soporte externos, registrando los datos de contacto y el motivo de la derivación.
-* **RF17:** El sistema debe pausar automáticamente el contador de tiempo de resolución cuando el ticket se cambie al estado "En espera" por derivación externa.
-* **RF18:** El sistema debe exigir que un técnico interno valide la solución cargada por el especialista externo antes de permitir el cierre definitivo del ticket.
+#### ⚡ Módulo 3 — Resolución y Seguimiento de Incidentes
+| ID | Descripción del Requerimiento Funcional |
+| :---: | :--- |
+| **RF10** | El sistema debe permitir al Jefe de Sistemas asignar tickets de forma manual a cualquier técnico del área. |
+| **RF11** | El sistema debe incluir un chat o sección de seguimiento dentro del ticket para que el técnico y el empleado intercambien mensajes sobre el avance del caso. |
+| **RF12** | El sistema debe permitir a los técnicos documentar el tiempo exacto (horas/minutos) dedicado a la resolución de cada tarea interna o externa. |
+| **RF13** | El sistema debe enviar un correo al empleado solicitante cuando el ticket pase a estado "Resuelto", detallando la solución aplicada. |
+| **RF14** | El sistema debe permitir al técnico cambiar el estado del ticket a "Resuelto". Asimismo, debe habilitar una opción para que el empleado solicitante apruebe la solución y brinde su conformidad, permitiendo el cierre definitivo del caso de forma automática o manual según su interacción. |
+| **RF15** | En caso de contar con un ticket en estado “Resuelto” y no recibir respuesta por parte del solicitante para cerrarlo, el sistema deberá permitir al jefe de sistema cambiar el estado del ticket a cerrarlo. |
 
-#### Módulo 5 — Administración, Auditoría y Reportes
-* **RF19:** El sistema debe permitir a los técnicos transformar soluciones de tickets cerrados en artículos públicos o privados para agilizar problemas repetitivos.
-* **RF20:** El sistema debe contar con un motor de búsqueda con filtros avanzados (por número, fecha, área, técnico o estado) para consultar el historial de tickets.
-* **RF21:** El sistema debe registrar de forma inmutable qué usuario, técnico o especialista realizó cambios en los campos o estados del ticket, incluyendo fecha y hora.
-* **RF22:** El sistema debe proveer una herramienta para importar datos masivos de hardware y usuarios a través de archivos estructurados (CSV o PDF).
-* **RF23:** El sistema debe generar estadísticas de rendimiento.
-* **RF24:** El sistema debe mostrar en la pantalla de inicio de los técnicos gráficos en tiempo real con la cantidad de tickets abiertos, cerrados, vencidos y derivados.
+#### 🤝 Módulo 4 — Integración y Soporte Externo
+| ID | Descripción del Requerimiento Funcional |
+| :---: | :--- |
+| **RF16** | El sistema debe permitir la asignación de tickets a proveedores de soporte externos, registrando los datos de contacto y el motivo de la derivación. |
+| **RF17** | El sistema debe pausar automáticamente el contador de tiempo de resolución cuando el ticket se cambie al estado "En espera" por derivación externa. |
+| **RF18** | El sistema debe exigir que un técnico interno valide la solución cargada por el especialista externo antes de permitir el cierre definitivo del ticket. |
+
+#### 📊 Módulo 5 — Administración, Auditoría y Reportes
+| ID | Descripción del Requerimiento Funcional |
+| :---: | :--- |
+| **RF19** | El sistema debe permitir a los técnicos transformar soluciones de tickets cerrados en artículos públicos o privados para agilizar problemas repetitivos. |
+| **RF20** | El sistema debe contar con un motor de búsqueda con filtros avanzados (por número, fecha, área, técnico o estado) para consultar el historial de tickets. |
+| **RF21** | El sistema debe registrar de forma inmutable qué usuario, técnico o especialista realizó cambios en los campos o estados del ticket, incluyendo fecha y hora. |
+| **RF22** | El sistema debe proveer una herramienta para importar datos masivos de hardware y usuarios a través de archivos estructurados (CSV o PDF). |
+| **RF23** | El sistema debe generar estadísticas de rendimiento. |
+| **RF24** | El sistema debe mostrar en la pantalla de inicio de los técnicos gráficos en tiempo real con la cantidad de tickets abiertos, cerrados, vencidos y derivados. |
+
+---
 
 ### 5.2. Requerimientos No Funcionales (RNF)
 
-#### Seguridad y Respaldo
-* **RNF01:** El sistema debe cifrar los accesos web mediante certificados SSL/TLS, obligando el uso de conexiones seguras mediante el protocolo HTTPS.
-* **RNF02:** El sistema debe ejecutar una copia de seguridad automática de la base de datos y archivos adjuntos cada 24 horas, almacenándola en un volumen externo.
+A continuación, se detallan las restricciones, atributos de calidad y propiedades del entorno tecnológico requeridas:
 
-#### Usabilidad e Idioma
-* **RNF03:** La interfaz gráfica de usuario, los mensajes de error y las notificaciones por correo deben configurarse nativamente en idioma español.
-* **RNF04:** El sistema debe ser accesible de manera remota y local a través de navegadores web estándar (Chrome, Firefox, Edge, Safari) sin requerir instalaciones cliente.
+#### 🛡️ Seguridad y Respaldo
+| ID | Descripción del Requerimiento No Funcional |
+| :---: | :--- |
+| **RNF01** | El sistema debe cifrar los accesos web mediante certificados SSL/TLS, obligando el uso de conexiones seguras mediante el protocolo HTTPS. |
+| **RNF02** | El sistema debe ejecutar una copia de seguridad automática de la base de datos y archivos adjuntos cada 24 horas, almacenándola en un volumen externo. |
 
-#### Rendimiento y Capacidad
-* **RNF05:** El tiempo de procesamiento y carga de la pantalla principal no debe superar los 3 segundos bajo una conectividad de red estándar.
-* **RNF06:** El sistema debe soportar un mínimo de 50 usuarios conectados de forma simultánea sin experimentar degradación en los tiempos de respuesta del servidor.
+#### 🎨 Usabilidad e Idioma
+| ID | Descripción del Requerimiento No Funcional |
+| :---: | :--- |
+| **RNF03** | La interfaz gráfica de usuario, los mensajes de error y las notificaciones por correo deben configurarse nativamente en idioma español. |
+| **RNF04** | El sistema debe ser accesible de manera remota y local a través de navegadores web estándar (Chrome, Firefox, Edge, Safari) sin requerir instalaciones cliente. |
 
-#### Escalabilidad
-* **RNF07:** La plataforma debe permitir activar o desactivar módulos nativos de GLPI (como la gestión de proyectos o contratos) en el futuro sin alterar la base de datos de tickets existente.
+#### 🚀 Rendimiento y Capacidad
+| ID | Descripción del Requerimiento No Funcional |
+| :---: | :--- |
+| **RNF05** | El tiempo de procesamiento y carga de la pantalla principal no debe superar los 3 segundos bajo una conectividad de red estándar. |
+| **RNF06** | El sistema debe soportar un mínimo de 50 usuarios conectados de forma simultánea sin experimentar degradación en los tiempos de respuesta del servidor. |
+
+#### 📈 Escalabilidad
+| ID | Descripción del Requerimiento No Funcional |
+| :---: | :--- |
+| **RNF07** | La plataforma debe permitir activar o desactivar módulos nativos de GLPI (como la gestión de proyectos o contratos) en el futuro sin alterar la base de datos de tickets existente. |vos de GLPI (como la gestión de proyectos o contratos) en el futuro sin alterar la base de datos de tickets existente.
 
 ---
 
